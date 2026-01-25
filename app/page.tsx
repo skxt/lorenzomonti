@@ -7,15 +7,15 @@ import { TestimonialSection } from "@/sections/testimonial-section";
 import { WorkSection } from "@/sections/work-section";
 
 export default function Page() {
-    return (
-        <main className="mx-4 md:mx-16 lg:mx-24 xl:mx-32 border-x border-gray-800">
-            <HeroSection />
-            <LogoMarquee />
-            <FeatureSection />
-            <WorkSection />
-            <TestimonialSection />
-            <FaqSection />
-            <CtaSection />
-        </main>
-    );
+  return (
+    <main className="mx-4 md:mx-16 lg:mx-24 xl:mx-32 border-x border-blue-100">
+      <HeroSection />
+      <LogoMarquee />
+      <FeatureSection />
+      <WorkSection />
+      <TestimonialSection />
+      <FaqSection />
+      <CtaSection />
+    </main>
+  );
 }
