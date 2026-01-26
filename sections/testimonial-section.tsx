@@ -68,7 +68,7 @@ export const TestimonialSection = () => {
           </div>
 
           <p className="mt-6 text-lg font-medium italic">
-            "{testimonial.title}"
+            &quot;{testimonial.title}&quot;
           </p>
 
           <p className="mt-4 text-base/7 text-gray-400">{testimonial.quote}</p>
