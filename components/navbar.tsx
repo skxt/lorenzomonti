@@ -1,9 +1,9 @@
 "use client";
 
 import { MenuIcon, XIcon } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
+import { Logo } from "@/components/logo";
+import Link from "next/link";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +18,7 @@ export const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-blue-100">
-      <Link href="/" className="flex items-center gap-2">
-        <h2>
-          Dr. Lorenzo <span className="text-primary font-bold">Monti</span>
-        </h2>
-      </Link>
+      <Logo />
       <ul className="max-md:hidden flex items-center gap-8">
         {links.map((link) => (
           <li key={link.name}>
@@ -32,7 +28,7 @@ export const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button className="max-md:hidden bg-primary hover:bg-secondary transition duration-300 text-black px-6 py-2.5 rounded-lg">
+      <button className="max-md:hidden bg-primary hover:bg-secondary transition duration-300 text-slate-100 px-6 py-2.5">
         Get Started
       </button>
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
