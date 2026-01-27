@@ -1,10 +1,9 @@
-import { Host_Grotesk } from "next/font/google";
 import "./globals.css";
-import { Banner } from "@/components/banner";
+import { Host_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { Metadata } from "next";
 import LenisScroll from "@/components/lenis";
+import { Metadata } from "next";
 
 const hostGrotesk = Host_Grotesk({
     variable: "--font-host-grotesk",
@@ -26,7 +25,6 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${hostGrotesk.className} ${hostGrotesk.variable} antialiased`}>
-                <Banner />
                 <Navbar />
                 <LenisScroll />
                 {children}
