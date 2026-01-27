@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { IWhere } from "../types";
 
-export const features: IWhere[] = [
+export const whereItems: IWhere[] = [
   {
     title: "AI Agent Builder",
     description:

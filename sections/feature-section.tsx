@@ -1,5 +1,5 @@
 import { SectionTitle } from "@/components/section-title";
-import { features } from "@/data/features";
+import { whereItems } from "@/data/where";
 
 export const FeatureSection = () => {
   return (
@@ -11,7 +11,7 @@ export const FeatureSection = () => {
         />
       </div>
       <div className="border-t border-blue-100 grid grid-cols-1 md:grid-cols-3">
-        {features.map((feature, index) => (
+        {whereItems.map((feature, index) => (
           <div
             key={index}
             className="md:border-r border-b md:nth-[3]:border-r-0 md:nth-[6]:border-r-0 border-blue-100 hover:bg-white/5 flex flex-col items-start justify-center p-10"
