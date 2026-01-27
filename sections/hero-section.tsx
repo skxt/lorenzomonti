@@ -14,7 +14,7 @@ export const HeroSection = () => {
           <TrendingUpIcon className="size-5" />
           Trusted by 50,000+ users worldwide
         </div>
-        <h1 className="text-center font-urbanist text-[42px]/13 md:text-6xl/20 font-bold max-w-2xl bg-linear-to-r from-white to-white/50 bg-clip-text">
+        <h1 className="text-center font-sans text-[42px]/13 md:text-6xl/20 font-bold max-w-2xl bg-linear-to-r from-white to-white/50 bg-clip-text">
           Everything you need to <span className="text-primary">scale</span>{" "}
           your agency
         </h1>

@@ -19,7 +19,7 @@ export const Footer = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="font-urbanist text-lg/8 font-semibold">Product</h4>
+              <h4 className="font-sans text-lg/8 font-semibold">Product</h4>
               <ul className="mt-3">
                 <li className="text-sm/7 text-gray-500">
                   <a href="#" className="hover:underline">
@@ -44,7 +44,7 @@ export const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-urbanist text-lg/8 font-semibold">Company</h4>
+              <h4 className="font-sans text-lg/8 font-semibold">Company</h4>
               <ul className="mt-3">
                 <li className="text-sm/7 text-gray-500">
                   <a href="#" className="hover:underline">

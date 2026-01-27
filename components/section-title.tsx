@@ -12,7 +12,7 @@ export const SectionTitle = ({
   return (
     <>
       <h1
-        className={`font-urbanist text-4xl/12 font-bold max-w-2xl bg-linear-to-r from-white to-white/50 bg-clip-text ${leftAlign ? "md:text-left text-center" : "text-center"}`}
+        className={`font-sans text-4xl/12 font-bold max-w-2xl bg-linear-to-r from-white to-white/50 bg-clip-text ${leftAlign ? "md:text-left text-center" : "text-center"}`}
       >
         {title}
       </h1>

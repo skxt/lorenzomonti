@@ -2,8 +2,7 @@
 
 @theme {
   /* Font families */
-  --font-sans: "Inter", sans-serif;
-  --font-urbanist: "Urbanist", sans-serif;
+  --font-sans: var(--font-host-grotesk), ui-sans-serif, system-ui, sans-serif;
 
   /* Colors */
   --color-primary: #c2d6f5;

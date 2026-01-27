@@ -1,4 +1,4 @@
-import { Geist, Urbanist } from "next/font/google";
+import { Host_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Banner } from "@/components/banner";
 import { Navbar } from "@/components/navbar";
@@ -6,14 +6,10 @@ import { Footer } from "@/components/footer";
 import { Metadata } from "next";
 import LenisScroll from "@/components/lenis";
 
-const geist = Geist({
-    variable: "--font-sans",
+const hostGrotesk = Host_Grotesk({
+    variable: "--font-host-grotesk",
     subsets: ["latin"],
-});
-
-const urbanist = Urbanist({
-    variable: "--font-urbanist",
-    subsets: ["latin"],
+    display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +25,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>
+            <body className={`${hostGrotesk.className} ${hostGrotesk.variable} antialiased`}>
                 <Banner />
                 <Navbar />
                 <LenisScroll />
