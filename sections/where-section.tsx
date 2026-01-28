@@ -1,6 +1,6 @@
 import { SectionTitleAlt } from "@/components/section-title-alt";
 import { ArrowUpRightIcon, SparkleIcon } from "lucide-react";
-import { features } from "@/data/where";
+import { whereItems } from "@/data/where";
 import { AnimatedContent } from "@/components/animated-content";
 
 export const WhereSection = () => {
@@ -31,7 +31,7 @@ export const WhereSection = () => {
           </div>
         </div>
         <div className="p-4 pt-16 md:p-16 space-y-6">
-          {features.map((feature, index) => (
+          {whereItems.map((feature, index) => (
             <AnimatedContent
               key={index}
               className={`${feature.cardBg} flex flex-col items-start p-6 rounded-xl w-full md:sticky md:top-26`}
