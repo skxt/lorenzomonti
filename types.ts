@@ -13,14 +13,10 @@ export interface IWork {
   image: string;
 }
 
-export interface ITestimonial {
+export interface IService {
   id: number;
-  name: string;
   title: string;
-  quote: string;
-  avatar: string;
-  handle: string;
-  rating: 1 | 2 | 3 | 4 | 5;
+  description?: string;
 }
 
 export interface IFaq {
@@ -38,4 +34,14 @@ export interface ISectionTitleAlt {
 export interface ICustomIcon {
   icon: LucideIcon;
   dir?: "left" | "right";
+}
+
+export interface IExperience {
+  image: string;
+  title: string;
+  company: string;
+  location: string;
+  start: string;
+  end: string;
+  description: string[];
 }
