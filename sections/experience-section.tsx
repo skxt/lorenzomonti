@@ -1,4 +1,4 @@
-import {CardExperience} from "@/components/card-experience";
+import { Section} from "@/components/section";
 import Image from "next/image";
 
 export const ExperienceSection = () => {
@@ -46,20 +46,22 @@ export const ExperienceSection = () => {
     ];
 
     return (
-        <CardExperience title="Experience">
-            <div className="space-y-6">
+        <Section>
+            <div className="flex flex-col md:flex-row items-center justify-around md:items-start gap-8 w-full p-10">
+                    <p className="text-xl text-center md:text-left md:text-lg font-medium pt-3 w-full md:max-w-42">Esperienze</p>
+            <div>
                 {experience.map((experience) => (
-                    <div key={experience.title} className="w-full border-b border-blue-100 p-6">
+                    <div key={experience.title} className="w-full border-b border-blue-100 p-6 max-w-2xl">
                         <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
                             <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
-                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                                {/* <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
                                     <Image
                                         src={experience.image}
                                         alt={experience.title}
                                         width={25}
                                         height={25}
                                     />
-                                </div>
+                                </div> */}
                                 <div>
                                     <h3 className="text-base font-medium text-gray-800">
                                         {experience.title}
@@ -77,6 +79,8 @@ export const ExperienceSection = () => {
                     </div>
                 ))}
             </div>
-        </CardExperience>
+            </div>
+
+        </Section>
     );
 }

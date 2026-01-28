@@ -1,8 +1,9 @@
+import { Section } from "@/components/section";
 import { CardGlowing } from "../components/card-glowing";
 
 export const AboutSection = () => {
   return (
-    <section>
+    <Section>
       <main className="flex justify-center py-20 px-4 md:px-16 lg:px-24 xl:px-32 border-b border-blue-100">
         <div className="flex flex-col md:flex-row gap-10 justify-between items-center w-full max-w-6xl">
           <div className="flex flex-col items-center md:items-start">
@@ -28,6 +29,6 @@ export const AboutSection = () => {
           </div>
         </div>
       </main>
-    </section>
+    </Section>
   );
 };
