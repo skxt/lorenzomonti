@@ -1,13 +1,15 @@
 interface SectionTitleProps {
   title: string;
-  description: string;
+  description?: string;
   leftAlign?: boolean;
+  children?: React.ReactNode;
 }
 
 export const SectionTitle = ({
   title,
   description,
   leftAlign,
+  children,
 }: SectionTitleProps) => {
   return (
     <>
@@ -16,11 +18,17 @@ export const SectionTitle = ({
       >
         {title}
       </h1>
-      <p
-        className={`text-base text-zinc-500 max-w-lg mt-2 ${leftAlign ? "text-center md:text-left" : "text-center"}`}
-      >
-        {description}
-      </p>
+      {children ? (
+        children
+      ) : (
+        description && (
+          <p
+            className={`text-base text-zinc-500 max-w-lg mt-2 ${leftAlign ? "text-center md:text-left" : "text-center"}`}
+          >
+            {description}
+          </p>
+        )
+      )}
     </>
   );
 };
