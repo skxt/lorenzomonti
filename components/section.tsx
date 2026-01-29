@@ -4,7 +4,7 @@ interface Props {
 
 export const Section = ({ children }: Props) => {
     return (
-        <section>
+        <section className="border-b border-blue-100">
             {children}
         </section>
     );

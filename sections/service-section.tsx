@@ -1,5 +1,7 @@
 "use client";
+import { Section } from "@/components/section";
 import { SectionTitle } from "@/components/section-title";
+import { SectionContainer } from "@/components/section-container";
 import { services } from "@/data/service";
 import { ArrowDownRight } from "lucide-react";
 import Link from "next/link";
@@ -20,10 +22,10 @@ export const ServiceSection = () => {
   }, [autoPlay]);
 
   return (
-    <div className="mt-30 border-y border-blue-100">
-      <div className="p-6 md:p-24">
+    <Section>
+      <SectionContainer>
         <SectionTitle title="Servizi" leftAlign={true}>
-          <div className="text-base text-zinc-500 max-w-lg mt-2 md:text-left text-center">
+          <div className="text-lg tracking-wide text-zinc-500 max-w-lg mt-2 md:text-left text-center">
             <p>
               Il Dott. Lorenzo Monti è medico specialista in Ortopedia e
               Traumatologia, con particolare competenza nella{" "}
@@ -43,9 +45,9 @@ export const ServiceSection = () => {
             </p>
           </div>
         </SectionTitle>
-      </div>
+      </SectionContainer>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 divide-x divide-gray-800 border-t border-blue-100">
+      <div className="grid grid-cols-1 md:grid-cols-2 border-t divide-x divide-blue-100 border-blue-100">
         <div
           onMouseEnter={() => setAutoPlay(false)}
           onMouseLeave={() => setAutoPlay(true)}
@@ -70,6 +72,6 @@ export const ServiceSection = () => {
           <p className="text-base/7 text-gray-400">{service.description}</p>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };

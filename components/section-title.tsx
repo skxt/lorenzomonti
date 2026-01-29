@@ -3,6 +3,7 @@ interface SectionTitleProps {
   description?: string;
   leftAlign?: boolean;
   children?: React.ReactNode;
+  className?: string;
 }
 
 export const SectionTitle = ({
@@ -10,9 +11,10 @@ export const SectionTitle = ({
   description,
   leftAlign,
   children,
+  className = ""
 }: SectionTitleProps) => {
   return (
-    <>
+    <div className={className}>
       <h1
         className={`font-sans text-4xl/12 font-bold max-w-2xl bg-linear-to-r from-white to-white/50 bg-clip-text ${leftAlign ? "md:text-left text-center" : "text-center"}`}
       >
@@ -29,6 +31,6 @@ export const SectionTitle = ({
           </p>
         )
       )}
-    </>
+    </div>
   );
 };

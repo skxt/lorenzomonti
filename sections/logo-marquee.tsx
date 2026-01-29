@@ -85,7 +85,7 @@ export const LogoMarquee = () => {
   return (
     <div className="flex items-center md:px-20 border-y border-blue-100">
       <p className="text-nowrap text-gray-400 max-md:hidden">Trusted by:</p>
-      <Marquee gradient={true} gradientColor="#000" speed={30}>
+      <Marquee gradient={true} gradientColor="#eff6ff" speed={30}>
         {[...companyLogos, ...companyLogos].map((logo, i) => (
           <div key={i} className="mx-8 py-8">
             {logo}
