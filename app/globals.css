@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font families */
+  --font-sans: var(--font-host-grotesk), ui-sans-serif, system-ui, sans-serif;
+
+  /* Colors */
+  --color-primary: #4473bc;
+  --color-secondary: #dce9fb;
+}
+
+@layer base {
+  body {
+    @apply bg-blue-50 text-slate-800 text-sm antialiased;
+  }
+
+  button {
+    @apply cursor-pointer rounded-full;
+  }
+}
