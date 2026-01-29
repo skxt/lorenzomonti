@@ -6,30 +6,35 @@ import LenisScroll from "@/components/lenis";
 import { Metadata } from "next";
 
 const hostGrotesk = Host_Grotesk({
-    variable: "--font-host-grotesk",
-    subsets: ["latin"],
-    display: "swap",
+  variable: "--font-host-grotesk",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-    title: "Mapple - PrebuiltUI",
-    description: "Prebuilt UI is a free and open-source UI Kit for startups.",
-    keywords: "prebuilt ui, ui kit, startup, free ui kit, open source ui kit",
+  title: "Lorenzo Monti | Ortopedico e Traumatologo",
+  description: "Ortopedico e Traumatologo",
+  keywords: "Lorenzo Monti, Ortopedico, Traumatologo",
+  icons: {
+    icon: [],
+  },
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-            <body className={`${hostGrotesk.className} ${hostGrotesk.variable} antialiased`}>
-                <Navbar />
-                <LenisScroll />
-                {children}
-                <Footer />
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body
+        className={`${hostGrotesk.className} ${hostGrotesk.variable} antialiased`}
+      >
+        <Navbar />
+        <LenisScroll />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }
