@@ -57,19 +57,16 @@ export const ServiceSection = () => {
             <div
               key={item.id}
               onMouseEnter={() => setCurrentIndex(index)}
-              className={`flex items-center gap-4 py-8 px-12 border-b border-blue-100 last:border-b-0
-                                ${index === currentIndex ? "bg-primary/10" : "hover:bg-primary/10"}`}
+              className={`flex items-center gap-4 py-8 px-12 border-b border-blue-100 last:border-b-0 ${index === currentIndex ? "bg-primary/10" : "hover:bg-primary/10"}`}
             >
               <ArrowDownRight height={24} width={24} />
-              <div>
-                <p className="text-lg font-medium">{item.title}</p>
-              </div>
+              <p className="text-xl font-bold">{item.title}</p>
             </div>
           ))}
         </div>
 
         <div className="p-6 md:p-15 max-md:border-t border-blue-100 flex flex-col items-start">
-          <p className="text-base/7 text-gray-400">{service.description}</p>
+          <p className="text-lg text-gray-500">{service.description}</p>
         </div>
       </div>
     </Section>
