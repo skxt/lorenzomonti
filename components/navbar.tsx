@@ -4,16 +4,15 @@ import { MenuIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 import { Logo } from "@/components/logo";
 import Link from "next/link";
+import { ArrowDownRight } from "lucide-react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
     { name: "Home", href: "/" },
-    { name: "Products", href: "/products" },
-    { name: "Resources", href: "/resources" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "About", href: "/about" },
+    { name: "About", href: "/#" },
+    { name: "Services", href: "/#" },
   ];
 
   return (
@@ -28,8 +27,8 @@ export const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button className="max-md:hidden bg-primary hover:bg-secondary transition duration-300 text-slate-100 px-6 py-2.5">
-        Get Started
+      <button className="max-md:hidden border border-slate-950 hover:bg-slate-950 text-slate-950 transition duration-300 px-6 py-2.5 flex items-center gap-2 text-base">
+        <ArrowDownRight height={24} width={24} /> Contattami
       </button>
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <MenuIcon className="size-6" />
