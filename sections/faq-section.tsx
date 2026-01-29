@@ -1,21 +1,19 @@
 import { SectionTitle } from "@/components/section-title";
 import { faqs } from "@/data/faqs";
 import { MinusIcon, PlusIcon } from "lucide-react";
+import { SectionContainer } from "@/components/section-container";
 
 export const FaqSection = () => {
   return (
-    <div className="mt-30 grid grid-cols-1 md:grid-cols-2 border-y md:divide-x divide-gray-800 border-blue-100">
-      <div className="p-6 md:p-18">
+    <div className="mt-30 grid grid-cols-1 md:grid-cols-2 border-y md:divide-x divide-blue-100 border-blue-100">
+      <SectionContainer>
         <SectionTitle
-          title="Asked Questions."
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+          title="Hai delle domande?"
+          description="Posso aiutarti a trovare la soluzione giusta per le tue esigenze. Contattami per saperne di più."
           leftAlign
         />
-      </div>
+      </SectionContainer>
       <div>
-        <h3 className="text-lg uppercase font-medium p-6 border-b border-blue-100">
-          “General”
-        </h3>
         {faqs.map((faq, index) => (
           <details
             key={index}
@@ -27,7 +25,7 @@ export const FaqSection = () => {
               <MinusIcon className="size-5 shrink-0 text-gray-500 hidden group-open:block" />
               <PlusIcon className="size-5 shrink-0 text-gray-500 group-open:hidden" />
             </summary>
-            <p className="pb-5 px-4 pr-10 text-sm/6 text-gray-500">
+            <p className="pb-5 px-4 pr-10 text-base text-gray-500">
               {faq.answer}
             </p>
           </details>

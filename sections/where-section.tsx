@@ -2,20 +2,21 @@ import { SectionTitleAlt } from "@/components/section-title-alt";
 import { ArrowUpRightIcon, SparkleIcon } from "lucide-react";
 import { whereItems } from "@/data/where";
 import { AnimatedContent } from "@/components/animated-content";
+import { SectionContainer } from "@/components/section-container";
 
 export const WhereSection = () => {
   return (
-    <section id="features" className="px-4 md:px-16 lg:px-24 xl:px-32">
-      <div className="grid grid-cols-1 md:grid-cols-2 border-x md:divide-x border-gray-200 divide-gray-200 max-w-7xl mx-auto">
+    <SectionContainer>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x border-gray-200 divide-gray-200 mx-auto">
         <div>
-          <div className="p-4 pt-16 md:p-16 flex flex-col items-start md:sticky md:top-26">
+          <div className="flex flex-col items-start md:sticky md:top-26">
             <SectionTitleAlt
               dir="left"
               icon={SparkleIcon}
               title="Core features"
               subtitle="Everything you need to build, deploy and scale AI agents - designed for speed, reliability and real-world production use."
             />
-            <AnimatedContent className="p-4 md:p-6 bg-orange-500 w-full rounded-xl mt-12">
+            <AnimatedContent className="p-4 md:p-6 bg-slate-100 w-full  mt-12">
               <p className="text-lg text-white">
                 Trusted by teams building intelligent products with AI agents.
               </p>
@@ -30,7 +31,7 @@ export const WhereSection = () => {
             </AnimatedContent>
           </div>
         </div>
-        <div className="p-4 pt-16 md:p-16 space-y-6">
+        <div className="px-24 space-y-6">
           {whereItems.map((feature, index) => (
             <AnimatedContent
               key={index}
@@ -47,6 +48,6 @@ export const WhereSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
