@@ -65,7 +65,7 @@ export const ServiceSection = () => {
           ))}
         </div>
 
-        <div className="p-6 md:p-15 max-md:border-t border-blue-100 flex flex-col items-start">
+        <div className="p-6 md:px-15 md:pt-15 md:pb-0 max-md:border-t border-blue-100 flex flex-col items-start">
           <p className="text-lg text-gray-500">{service.description}</p>
         </div>
       </div>
