@@ -3,20 +3,26 @@ import { IService } from "@/types";
 export const services: IService[] = [
   {
     id: 1,
-    title: "Protesi di Anca",
+    title: "Anca",
     description:
-      "E' un intervento chirurgico che ha rivoluzionato il trattamento di molte patologie articolari, migliorando la qualità della vita di milioni di persone. Grazie ai progressi nella chirurgia ortopedica, oggi è possibile tornare a camminare senza dolore e a condurre una vita attiva anche dopo un'importante compromissione dell'articolazione.",
+      "Specialista in chirurgia protesica mininvasiva d'anca, finalizzata alla massima conservazione dei tessuti e a un recupero post-operatorio accelerato. Grazie all'integrazione dei più avanzati sistemi robotici europei, ogni intervento è pianificato con precisione millimetrica. Padroneggio tutte le principali vie d'accesso (anteriore, laterale e postero-laterale), permettendomi di personalizzare la scelta chirurgica in base alle specifiche esigenze anatomiche, allo stile di vita e al morfotipo di ogni singolo paziente.",
   },
   {
     id: 2,
-    title: "Protesi di Ginocchio",
+    title: "Ginocchio",
     description:
-      "La protesi di ginocchio rappresenta una soluzione efficace per chi soffre di gravi problemi articolari, come l'artrosi avanzata o lesioni traumatiche irreversibili. Questo intervento chirurgico permette di ripristinare la funzionalità del ginocchio e migliorare significativamente la qualità della vita del paziente.",
+      "Soluzioni chirurgiche all'avanguardia per il trattamento dell'artrosi del ginocchio, privilegiando tecniche mininvasive e approcci a conservazione del legamento crociato. L'obiettivo è ripristinare una cinematica articolare naturale, sostituendo solo i compartimenti realmente usurati o eseguendo ricostruzioni legamentose associate alla protesi.",
   },
   {
     id: 3,
-    title: "Gonartrosi e Coxartrosi",
+    title: "Chirurgia Artroscopica e Sport",
     description:
-      "L'artrosi è una delle malattie articolari più diffuse al mondo, soprattutto nelle persone sopra i 50 anni. Tra le forme più comuni troviamo la gonartrosi (artrosi del ginocchio) e la coxartrosi (artrosi dell'anca). Queste condizioni possono compromettere seriamente la qualità della vita, limitando i movimenti e causando dolore cronico. Conoscerle meglio è il primo passo per affrontarle in modo efficace.",
+      "Trattamento specializzato delle patologie articolari dello sportivo, con focus sulla chirurgia artroscopica del ginocchio per lesioni meniscali e ricostruzioni capsulo-legamentose complesse. L'approccio è orientato alla Medicina dello Sport d'eccellenza: ogni percorso terapeutico è studiato per proteggere l'integrità dell'atleta, minimizzare i tempi di fermo e garantire un ritorno all'attività agonistica o amatoriale nelle migliori condizioni di stabilità e performance.",
+  },
+  {
+    id: 4,
+    title: "Terapia Conservativa e Rigenerativa",
+    description:
+      "Promuovo un approccio conservativo integrato per gestire il dolore e rallentare la degenerazione articolare di anca e ginocchio. Utilizzo protocolli avanzati di medicina rigenerativa e terapie infiltrative (anche sotto guida ecografica per la massima precisione), mirate a stimolare i processi di riparazione biologica dei tessuti",
   },
 ];
