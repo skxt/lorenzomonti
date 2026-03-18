@@ -1,11 +1,19 @@
 import { LucideIcon } from "lucide-react";
 
-export interface IWhere {
-  icon: LucideIcon;
+export interface IPlace {
+  location: string;
   title: string;
-  description: string;
+  url?: string;
+  phone: string;
+  icon?: LucideIcon;
+}
+
+export interface IFeature {
+  title: string;
   cardBg: string;
   iconBg: string;
+  icon: LucideIcon;
+  description: string;
 }
 
 export interface IWork {
@@ -25,9 +33,9 @@ export interface IFaq {
 }
 
 export interface ISectionTitleAlt {
-  icon: LucideIcon;
+  icon?: LucideIcon;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   dir?: "left" | "center";
 }
 
