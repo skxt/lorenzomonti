@@ -10,9 +10,9 @@ export const ExperienceSection = () => {
       <SectionContainer>
         <div className="flex flex-col md:flex-row items-center justify-between md:items-start gap-8">
           <div>
-            {experiences.map((experience) => (
+            {experiences.map((experience, index) => (
               <div
-                key={experience.title}
+                key={index}
                 className="w-full p-6 max-w-2xl bg-primary/5 mb-6"
               >
                 <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
