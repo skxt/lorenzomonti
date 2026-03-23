@@ -28,7 +28,7 @@ export const CardGlowing = () => {
           style={{ top: position.y - 120, left: position.x - 120 }}
         />
 
-        <div className="relative z-10 bg-slate-100 p-6 h-full w-full flex flex-col gap-3 items-center justify-center text-center">
+        <div className="relative z-10 bg-white p-6 h-full w-full flex flex-col gap-3 items-center justify-center text-center">
           <Image
             width={200}
             height={200}
@@ -39,11 +39,9 @@ export const CardGlowing = () => {
           <h2 className="text-2xl font-base text-slate-600 mb-1">
             Dr. Lorenzo Monti
           </h2>
-          {/* <p className="text-sm text-primary font-medium mb-4">
-            Chirurgo Ortopedico e Traumatologo
-          </p> */}
           <p className="text-sm text-slate-400 mb-4 px-4">
-            Specialista in Chirurgia Protesica Mininvasiva e Robotica di Anca e Ginocchio.
+            Specialista in Chirurgia Protesica Mininvasiva e Robotica di Anca e
+            Ginocchio.
           </p>
           <div className="flex space-x-6 mb-4 text-xl text-slate-400">
             <a

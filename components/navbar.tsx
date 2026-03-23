@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-blue-100">
-      <Logo />
+      <Logo themeColor="light" />
       <ul className="max-md:hidden flex items-center gap-8 text-base">
         {links.map((link) => (
           <li key={link.name}>
