@@ -3,7 +3,7 @@ import { Section } from "@/components/section";
 import { SectionTitle } from "@/components/section-title";
 import { SectionContainer } from "@/components/section-container";
 import { services } from "@/data/service";
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownLeft } from "lucide-react";
 import { useState } from "react";
 
 export const ServiceSection = () => {
@@ -26,12 +26,12 @@ export const ServiceSection = () => {
               key={item.id}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`cursor-pointer flex items-center gap-4 py-8 px-12 border-b border-blue-100 last:border-b-0 transition-colors duration-200 ${
+              className={`cursor-pointer flex items-center justify-between py-8 px-12 border-b border-blue-100 last:border-b-0 transition-colors duration-200 ${
                 index === hoveredIndex ? "bg-primary/10" : "hover:bg-primary/10"
               }`}
             >
-              <ArrowDownRight height={24} width={24} />
               <p className="text-xl font-bold">{item.title}</p>
+              <ArrowDownLeft height={24} width={24} />
             </div>
           ))}
         </div>

@@ -23,15 +23,6 @@ export const AboutSection = () => {
                   </span>
                   .
                 </p>
-                {/* <p className="mt-4">
-              Attualmente ricopre il ruolo di Aiuto presso l’
-              <span className="underline underline-offset-4">
-                Unità Operativa di Chirurgia Protesica Mininvasiva e Robotica
-              </span>{" "}
-              dell’IRCCS San Raffaele di Milano, diretta dal Dott. Francesco
-              Verde. Svolge lo stesso incarico anche presso l’Unità Operativa di
-              Ortopedia 1 dell’Istituto Clinico Villa Aprica di Como.
-            </p> */}
               </div>
             </SectionContainer>
           </div>
