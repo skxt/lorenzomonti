@@ -1,10 +1,5 @@
-import { CtaSection } from "@/sections/cta-section";
-import { FaqSection } from "@/sections/faq-section";
-import { FeatureSection } from "@/sections/feature-section";
-import { HeroSection } from "@/sections/hero-section";
 import { CollaborationsSection } from "@/sections/collaborations-section";
 import { ServiceSection } from "@/sections/service-section";
-import { WorkSection } from "@/sections/work-section";
 import { AboutSection } from "@/sections/about-section";
 import { WhereSection } from "@/sections/where-section";
 import { ExperienceSection } from "@/sections/experience-section";
@@ -15,9 +10,8 @@ export default function Page() {
       <AboutSection />
       <ServiceSection />
       <WhereSection />
-      <ExperienceSection />
       <CollaborationsSection />
-      <FaqSection />
+      <ExperienceSection />
     </main>
   );
 }
