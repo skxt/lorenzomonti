@@ -1,10 +1,8 @@
 import { SectionTitle } from "@/components/section-title";
 import {
-  ArrowUpRightIcon,
   MapPinIcon,
   PhoneIcon,
   SquareArrowOutUpRight,
-  GlobeIcon,
   MailIcon,
 } from "lucide-react";
 import { places } from "@/data/where";
@@ -20,15 +18,6 @@ export const WhereSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 border-gray-200 mx-auto">
           <div className="flex flex-col items-start md:sticky md:top-26">
             <SectionTitle title="Dove opero" />
-            <AnimatedContent className="w-full mt-12">
-              <a
-                href="#"
-                className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1"
-              >
-                Prenota una visita
-                <ArrowUpRightIcon className="ms-1" size={20} />
-              </a>
-            </AnimatedContent>
             <AnimatedContent className="w-full">
               <a
                 href="#"
@@ -66,23 +55,14 @@ export const WhereSection = () => {
                   <PhoneIcon size={13} />
                   {place.phone}
                 </a>
-                {place.url && (
-                  <a
-                    href={place.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-gray-600 mt-2 flex items-center gap-1 hover:underline"
-                  >
-                    <GlobeIcon size={13} />
-                    {place.url}
-                  </a>
-                )}
-
-                <div
-                  className={`absolute bottom-4 right-4 p-2 text-slate-300 rounded-md`}
+                <a
+                  href={place.url ?? "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-4 right-4 p-2 text-slate-300 rounded-md"
                 >
                   <SquareArrowOutUpRight size={26} />
-                </div>
+                </a>
               </AnimatedContent>
             ))}
           </div>
