@@ -38,7 +38,7 @@ export const ServiceSection = () => {
 
         <div className="p-6 md:px-15 md:py-15 max-md:border-t border-blue-100 flex flex-col items-start">
           <p
-            className="text-xl text-gray-500 max-w-3xl my-auto font-light transition-opacity duration-300"
+            className="text-xl text-gray-500 max-w-3xl my-auto font-light leading-7 transition-opacity duration-300"
             style={{ opacity: service ? 1 : 0 }}
           >
             {service?.description ?? ""}
