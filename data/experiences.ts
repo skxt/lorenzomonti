@@ -96,7 +96,7 @@ export const education: IExperience[] = [
   },
   {
     image: "/logo-mark.svg",
-    title: "Specializzazione in Ortopedia e Traumatologia (70/70 e lode)",
+    title: "Specializzazione in Ortopedia e Traumatologia",
     company: "Università degli Studi di Milano",
     location: "Milano",
     start: "2010",
@@ -105,7 +105,7 @@ export const education: IExperience[] = [
   },
   {
     image: "/logo-mark.svg",
-    title: "Laurea Magistrale in Medicina e Chirurgia (110/110)",
+    title: "Laurea Magistrale in Medicina e Chirurgia",
     company: "Università degli Studi di Milano",
     location: "Milano",
     start: "2002",

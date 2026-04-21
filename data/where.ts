@@ -17,7 +17,7 @@ export const places: IPlace[] = [
     location: "Milano (MI)",
     title: "I.R.C.C.S. Ospedale San Raffaele",
     phone: "+39 02 26432643",
-    url: "https://www.hsr.it/",
+    url: "https://www.hsr.it/dottori/lorenzo-monti",
   },
   {
     location: "Milano (MI)",
@@ -37,9 +37,9 @@ export const places: IPlace[] = [
     url: "https://www.studiophysiospecialist.it/",
   },
   {
-    location: "Seregno (MB)",
-    title: "Studio Sanigrad",
-    phone: "+39 0362 326810",
-    url: "https://www.sanigrad.com/",
+    location: "Cabiate (CO)",
+    title: "Ai Clinics",
+    phone: "+39 031 5478274",
+    url: "https://www.aiclinics.it/dott-lorenzo-monti/",
   },
 ];
