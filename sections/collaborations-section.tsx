@@ -9,6 +9,7 @@ export const CollaborationsSection = () => {
     { src: "/logo-sviz.png", alt: "SVIZ" },
     { src: "/logo-sms.png", alt: "SMS" },
     { src: "/logo-venini.png", alt: "Venini" },
+    { src: "/logo-aiclinics.jpg", alt: "AICLINICS" },
   ];
   return (
     <div className="bg-white flex justify-center">
@@ -28,7 +29,7 @@ export const CollaborationsSection = () => {
                 <NextImage
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-8 w-auto opacity-70"
+                  className="h-8 w-auto opacity-90"
                   height={200}
                   width={200}
                 />
