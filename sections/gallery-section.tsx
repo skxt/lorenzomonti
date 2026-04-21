@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function GallerySection() {
   return (
-    <>
+    <section>
       <div className="flex items-center gap-2 h-[400px] w-full max-w-4xl mt-30 mx-auto">
         <div className="relative grow transition-all w-56 overflow-hidden h-[400px] duration-500 hover:w-[50%]">
           <Image
@@ -59,6 +59,6 @@ export function GallerySection() {
           />
         </div>
       </div>
-    </>
+    </section>
   );
 }

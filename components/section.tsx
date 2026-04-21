@@ -1,10 +1,11 @@
 interface Props {
     children: React.ReactNode;
+    id?: string;
 }
 
-export const Section = ({ children }: Props) => {
+export const Section = ({ children, id }: Props) => {
     return (
-        <section className="border-b border-blue-100">
+        <section id={id} className="border-b border-blue-100">
             {children}
         </section>
     );

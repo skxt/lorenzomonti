@@ -11,7 +11,7 @@ export const ServiceSection = () => {
   const service = hoveredIndex !== null ? services[hoveredIndex] : null;
 
   return (
-    <Section>
+    <Section id="services">
       <SectionContainer>
         <SectionTitle
           title="Aree di Competenza"

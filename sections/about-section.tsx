@@ -4,7 +4,7 @@ import { CardGlowing } from "@/components/card-glowing";
 
 export const AboutSection = () => {
   return (
-    <Section>
+    <Section id="about">
       <main className="flex justify-between">
         <div className="flex flex-col md:flex-row gap-10 justify-between items-center w-full">
           <div className="flex flex-col items-center md:items-start">

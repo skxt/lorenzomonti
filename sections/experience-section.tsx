@@ -117,7 +117,7 @@ const ExperienceList = ({ items }: { items: IExperience[] }) => {
 
 export const ExperienceSection = () => {
   return (
-    <div className="mt-30 border-y border-blue-100">
+    <div id="experience" className="mt-30 border-y border-blue-100">
       <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x divide-blue-100 border-b border-blue-100">
         <SectionContainer>
           <SectionTitle

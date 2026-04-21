@@ -13,7 +13,7 @@ import { WhatsAppIcon } from "@/components/icons";
 
 export const WhereSection = () => {
   return (
-    <Section>
+    <Section id="where">
       <SectionContainer>
         <div className="grid grid-cols-1 md:grid-cols-2 border-gray-200 mx-auto">
           <div className="flex flex-col items-start md:sticky md:top-26">
