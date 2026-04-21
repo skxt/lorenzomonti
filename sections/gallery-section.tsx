@@ -3,11 +3,11 @@ import Image from "next/image";
 export function GallerySection() {
   return (
     <>
-      <div className="flex items-center gap-2 h-[400px] w-full max-w-4xl my-10 mx-auto">
-        <div className="relative grow transition-all w-56 overflow-hidden h-[400px] duration-500 hover:w-full">
+      <div className="flex items-center gap-2 h-[400px] w-full max-w-4xl mt-30 mx-auto">
+        <div className="relative grow transition-all w-56 overflow-hidden h-[400px] duration-500 hover:w-[50%]">
           <Image
             className="h-full w-full object-cover object-center rounded-2xl grayscale brightness-90 hover:grayscale-50 hover:brightness-60 duration-500"
-            src="/monti.jpeg"
+            src="/monti1.jpeg"
             alt="image"
             width={800}
             height={800}
@@ -31,7 +31,7 @@ export function GallerySection() {
             height={800}
           />
         </div>
-        <div className="relative grow transition-all w-56 overflow-hidden h-[400px] duration-500 hover:w-full">
+        <div className="relative grow transition-all w-56 overflow-hidden h-[400px] duration-500 hover:w-[50%]">
           <Image
             className="h-full w-full object-cover object-center rounded-2xl grayscale brightness-90 hover:grayscale-50 hover:brightness-60 duration-500"
             src="/monti4.jpeg"
@@ -52,7 +52,7 @@ export function GallerySection() {
         <div className="relative grow transition-all w-56 overflow-hidden h-[400px] duration-500 hover:w-full">
           <Image
             className="h-full w-full object-cover object-center rounded-2xl grayscale brightness-90 hover:grayscale-0 hover:brightness-60 duration-500"
-            src="/monti7.jpeg"
+            src="/monti6.jpeg"
             alt="image"
             width={800}
             height={800}
