@@ -6,6 +6,7 @@ export interface IPlace {
   url?: string;
   phone: string;
   icon?: LucideIcon;
+  activityType: "exam" | "surgery";
 }
 
 export interface IFeature {
