@@ -44,7 +44,17 @@ export interface ICustomIcon {
   dir?: "left" | "right";
 }
 
-export interface IExperience {
+export interface IActivity {
+  image: string;
+  title: string;
+  company: string;
+  location: string;
+  start: string;
+  end: string;
+  description: string[];
+}
+
+export interface IEducation {
   image: string;
   title: string;
   company: string;

@@ -2,7 +2,7 @@ import { CollaborationsSection } from "@/sections/collaborations-section";
 import { ServiceSection } from "@/sections/service-section";
 import { AboutSection } from "@/sections/about-section";
 import { WhereSection } from "@/sections/where-section";
-import { ExperienceSection } from "@/sections/experience-section";
+import { ActivitySection } from "@/sections/activity-section";
 import { GallerySection } from "@/sections/gallery-section";
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
       <ServiceSection />
       <WhereSection />
       <GallerySection />
-      <ExperienceSection />
+      <ActivitySection />
       <CollaborationsSection />
     </main>
   );

@@ -1,7 +1,7 @@
-import { IExperience } from "@/types";
+import { IActivity, IEducation } from "@/types";
 
 // 1. ESPERIENZE PROFESSIONALI (Focus: Ruoli di responsabilità e consulenza)
-export const experiences: IExperience[] = [
+export const experiences: IActivity[] = [
   {
     image: "/logo-mark.svg",
     title:
@@ -27,46 +27,57 @@ export const experiences: IExperience[] = [
   },
   {
     image: "/logo-mark.svg",
-    title: "Consulente Ortopedico",
-    company: "Ospedale COF Alta Valle Intelvi",
-    location: "Como",
-    start: "2019",
+    title: "Consulente Ortopedico Specialistico",
+    company: "Ministero dell'Interno – Polizia di Stato",
+    location: "Monza, Como, Piacenza, Milano",
+    start: "2024",
     end: "Presente",
-    description: ["Attività di consulenza ortopedica specialistica."],
-  },
-  {
-    image: "/logo-mark.svg",
-    title: "Dirigente Medico – Ortopedia e Traumatologia",
-    company: "I.C. Villa Aprica",
-    location: "Como",
-    start: "2017",
-    end: "2023",
-    description: ["Attività di chirurgia ortopedica e traumatologica."],
-  },
-  {
-    image: "/logo-mark.svg",
-    title: "Dirigente Medico – Chirurgia del Ginocchio",
-    company: "IRCCS Galeazzi",
-    location: "Milano",
-    start: "2015",
-    end: "2017",
-    description: ["Specialista nel reparto diretto dal Prof. D'Anchise."],
-  },
-  {
-    image: "/logo-mark.svg",
-    title: "Specializzando in Ortopedia e Traumatologia",
-    company: "I.R.C.C.S. Galeazzi",
-    location: "Milano",
-    start: "2010",
-    end: "2015",
     description: [
-      "Formazione completa presso i reparti di Chirurgia del Ginocchio, Traumatologia, Chirurgia della Mano, e Chirurgia Ricostruttiva (CRIO).",
+      "Incaricato della consulenza ortopedica per il personale della Polizia di Stato e della Prefettura presso le Questure di Monza, Como e Piacenza. Svolgo inoltre attività specialistica presso il Centro Polifunzionale di Milano.",
     ],
   },
+  // {
+  //   image: "/logo-mark.svg",
+  //   title: "Consulente Ortopedico",
+  //   company: "Ospedale COF Alta Valle Intelvi",
+  //   location: "Como",
+  //   start: "2019",
+  //   end: "Presente",
+  //   description: ["Attività di consulenza ortopedica specialistica."],
+  // },
+  // {
+  //   image: "/logo-mark.svg",
+  //   title: "Dirigente Medico – Ortopedia e Traumatologia",
+  //   company: "I.C. Villa Aprica",
+  //   location: "Como",
+  //   start: "2017",
+  //   end: "2023",
+  //   description: ["Attività di chirurgia ortopedica e traumatologica."],
+  // },
+  // {
+  //   image: "/logo-mark.svg",
+  //   title: "Dirigente Medico – Chirurgia del Ginocchio",
+  //   company: "IRCCS Galeazzi",
+  //   location: "Milano",
+  //   start: "2015",
+  //   end: "2017",
+  //   description: ["Specialista nel reparto diretto dal Prof. D'Anchise."],
+  // },
+  // {
+  //   image: "/logo-mark.svg",
+  //   title: "Specializzando in Ortopedia e Traumatologia",
+  //   company: "I.R.C.C.S. Galeazzi",
+  //   location: "Milano",
+  //   start: "2010",
+  //   end: "2015",
+  //   description: [
+  //     "Formazione completa presso i reparti di Chirurgia del Ginocchio, Traumatologia, Chirurgia della Mano, e Chirurgia Ricostruttiva (CRIO).",
+  //   ],
+  // },
 ];
 
 // 2. FORMAZIONE (Focus: Titoli accademici, rimossi i diplomi scolastici)
-export const education: IExperience[] = [
+export const education: IEducation[] = [
   {
     image: "/logo-mark.svg",
     title: "Docente e Tutor Universitario",
@@ -115,7 +126,7 @@ export const education: IExperience[] = [
 ];
 
 // 3. PREMI E CORSI (Separati i riconoscimenti dai corsi di routine)
-export const courses: IExperience[] = [
+export const courses: IEducation[] = [
   {
     image: "/logo-mark.svg",
     title: "2° Classificato – Master Arthroscopist Advanced Knee",

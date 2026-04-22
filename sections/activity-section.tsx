@@ -3,16 +3,46 @@ import { SectionTitle } from "@/components/section-title";
 import { experiences, education } from "@/data/experiences";
 import { ChevronDown, ChevronUp, PlusIcon } from "lucide-react";
 import { SectionContainer } from "@/components/section-container";
-import { IExperience } from "@/types";
+import { IActivity } from "@/types";
 import { useState, useEffect, useRef } from "react";
 
 const PAGE_SIZE = 3;
 
-const ExperienceItem = ({
+const ExperienceCard = ({ item }: { item: IActivity }) => {
+  return (
+    <div className="border-b border-blue-100 last:border-b-0 px-4 py-5 flex flex-col gap-1.5">
+      <span className="font-light text-xl">{item.title}</span>
+      <div className="flex flex-wrap items-center gap-x-2 font-medium text-sm text-slate-500">
+        {item.company && <span>{item.company}</span>}
+      </div>
+      {item.description && item.description.length > 0 && (
+        <div className="mt-1 space-y-1">
+          {item.description.map((line, i) => (
+            <p key={i} className="text-base text-gray-500 leading-relaxed">
+              {line}
+            </p>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+const ExperienceList = ({ items }: { items: IActivity[] }) => {
+  return (
+    <div>
+      {items.map((item, index) => (
+        <ExperienceCard key={index} item={item} />
+      ))}
+    </div>
+  );
+};
+
+const ActivityItem = ({
   item,
   animate,
 }: {
-  item: IExperience;
+  item: IActivity;
   animate: boolean;
 }) => {
   const ref = useRef<HTMLDetailsElement>(null);
@@ -79,7 +109,7 @@ const ExperienceItem = ({
   );
 };
 
-const ExperienceList = ({ items }: { items: IExperience[] }) => {
+const ActivityList = ({ items }: { items: IActivity[] }) => {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [newFromIndex, setNewFromIndex] = useState<number | null>(null);
   const visibleItems = items.slice(0, visibleCount);
@@ -93,7 +123,7 @@ const ExperienceList = ({ items }: { items: IExperience[] }) => {
   return (
     <div>
       {visibleItems.map((item, index) => (
-        <ExperienceItem
+        <ActivityItem
           key={index}
           item={item}
           animate={newFromIndex !== null && index >= newFromIndex}
@@ -115,14 +145,14 @@ const ExperienceList = ({ items }: { items: IExperience[] }) => {
   );
 };
 
-export const ExperienceSection = () => {
+export const ActivitySection = () => {
   return (
-    <div id="experience" className="mt-30 border-y border-blue-100">
+    <div id="activity" className="mt-30 border-y border-blue-100">
       <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x divide-blue-100 border-b border-blue-100">
         <SectionContainer>
           <SectionTitle
-            title="Esperienze"
-            description="Percorso professionale in ortopedia, traumatologia e consulenza medico-legale."
+            title="Attività"
+            description="Prestazioni professionali in ortopedia, traumatologia e consulenza medico-legale."
             leftAlign
           />
         </SectionContainer>
@@ -137,7 +167,7 @@ export const ExperienceSection = () => {
             leftAlign
           />
         </SectionContainer>
-        <ExperienceList items={education} />
+        <ActivityList items={education} />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export const Navbar = () => {
     { name: "Chi sono", href: "/#about" },
     { name: "Competenze", href: "/#services" },
     { name: "Dove opero", href: "/#where" },
-    { name: "Esperienze", href: "/#experience" },
+    { name: "Attività", href: "/#activity" },
   ];
 
   return (
