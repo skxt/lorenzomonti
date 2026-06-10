@@ -3,7 +3,7 @@ import { Logo } from "@/components/logo";
 export const Footer = () => {
   return (
     <>
-      <footer className="px-6 md:px-16 lg:px-24 xl:px-32 text-gray-500">
+      <footer className="px-4 md:px-16 lg:px-24 xl:px-32 text-gray-500">
         <div className="border-x p-8 md:p-14 border-blue-100 grid gap-12 md:grid-cols-2 bg-white">
           <div>
             <Logo themeColor="light" />

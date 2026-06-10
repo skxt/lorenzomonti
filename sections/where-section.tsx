@@ -31,7 +31,7 @@ export const WhereSection = () => {
                 <WhatsAppIcon className="size-4 ms-2" />
               </a>
             </AnimatedContent>
-            <AnimatedContent className="w-full">
+            <AnimatedContent className="w-full mb-6 md:mb-0">
               <a
                 href="#"
                 className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1"
@@ -41,7 +41,7 @@ export const WhereSection = () => {
               </a>
             </AnimatedContent>
           </div>
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-4 md:gap-6">
             {surgeryPlaces.map((place, index) => (
               <AnimatedContent
                 key={index}
@@ -88,18 +88,18 @@ export const WhereSection = () => {
             <AnimatedContent className="w-full">
               <a
                 href="#"
-                className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1"
+                className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1 mb-6 md:mb-0"
               >
                 Richiedi informazioni
                 <MailIcon className="ms-1" size={16} />
               </a>
             </AnimatedContent>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {examPlaces.map((place, index) => (
               <AnimatedContent
                 key={index}
-                className={`bg-white relative flex flex-col p-6 w-full`}
+                className={`bg-white relative flex flex-col p-4 md:p-6 w-full`}
               >
                 <p className="text-base font-medium">{place.title}</p>
                 <p className="text-sm text-gray-500 mt-1 flex items-center gap-1">

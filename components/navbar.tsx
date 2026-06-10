@@ -31,20 +31,25 @@ export const Navbar = () => {
         <MenuIcon className="size-6" />
       </button>
       <div
-        className={`flex flex-col items-center justify-center gap-6 text-base fixed inset-0 z-50 bg-black/80 backdrop-blur-sm transition duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={`flex flex-col items-center justify-center gap-8 fixed inset-0 z-50 bg-black/95 backdrop-blur-md transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
+        <button 
+          onClick={() => setIsOpen(false)} 
+          className="absolute top-6 right-6 text-white/80 hover:text-white transition-colors p-2"
+          aria-label="Chiudi menu"
+        >
+          <XIcon className="size-8" />
+        </button>
         {links.map((link) => (
           <Link
             key={link.name}
             href={link.href}
             onClick={() => setIsOpen(false)}
+            className="text-white hover:text-primary transition-colors text-2xl font-light tracking-wide py-2"
           >
             {link.name}
           </Link>
         ))}
-        <button onClick={() => setIsOpen(false)}>
-          <XIcon className="size-6" />
-        </button>
       </div>
     </div>
   );
