@@ -19,8 +19,8 @@ export const WhereSection = () => {
   return (
     <Section id="where">
       <SectionContainer>
-        <div className="grid grid-cols-1 md:grid-cols-2 border-gray-200 mx-auto">
-          <div className="flex flex-col items-start md:sticky md:top-26">
+        <div className="grid grid-cols-1 lg:grid-cols-2 border-gray-200 mx-auto">
+          <div className="flex flex-col items-start lg:sticky lg:top-26">
             <SectionTitle title="Dove opero" />
             <AnimatedContent className="w-full">
               <a
@@ -31,7 +31,7 @@ export const WhereSection = () => {
                 <WhatsAppIcon className="size-4 ms-2" />
               </a>
             </AnimatedContent>
-            <AnimatedContent className="w-full mb-6 md:mb-0">
+            <AnimatedContent className="w-full mb-6 lg:mb-0">
               <a
                 href="#"
                 className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1"
@@ -41,7 +41,7 @@ export const WhereSection = () => {
               </a>
             </AnimatedContent>
           </div>
-          <div className="grid grid-cols-1 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 gap-4 lg:gap-6">
             {surgeryPlaces.map((place, index) => (
               <AnimatedContent
                 key={index}
@@ -73,8 +73,8 @@ export const WhereSection = () => {
         </div>
       </SectionContainer>
       <SectionContainer>
-        <div className="grid grid-cols-1 md:grid-cols-2 border-gray-200 mx-auto">
-          <div className="flex flex-col items-start md:sticky md:top-26">
+        <div className="grid grid-cols-1 lg:grid-cols-2 border-gray-200 mx-auto">
+          <div className="flex flex-col items-start lg:sticky lg:top-26">
             <SectionTitle title="Dove visito" />
             <AnimatedContent className="w-full">
               <a
@@ -88,18 +88,18 @@ export const WhereSection = () => {
             <AnimatedContent className="w-full">
               <a
                 href="#"
-                className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1 mb-6 md:mb-0"
+                className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1 mb-6 lg:mb-0"
               >
                 Richiedi informazioni
                 <MailIcon className="ms-1" size={16} />
               </a>
             </AnimatedContent>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
             {examPlaces.map((place, index) => (
               <AnimatedContent
                 key={index}
-                className={`bg-white relative flex flex-col p-4 md:p-6 w-full`}
+                className={`bg-white relative flex flex-col p-4 lg:p-6 w-full`}
               >
                 <p className="text-base font-medium">{place.title}</p>
                 <p className="text-sm text-gray-500 mt-1 flex items-center gap-1">

@@ -16,7 +16,7 @@ export const SectionTitle = ({
   return (
     <div className={className}>
       <h1
-        className={`font-sans text-3xl md:text-4xl/12 font-bold max-w-2xl bg-linear-to-r from-white to-white/50 bg-clip-text ${leftAlign ? "md:text-left text-center" : "text-center"}`}
+        className={`font-sans text-3xl lg:text-4xl/12 font-bold max-w-2xl bg-linear-to-r from-white to-white/50 bg-clip-text ${leftAlign ? "lg:text-left text-center" : "text-center"}`}
       >
         {title}
       </h1>
@@ -24,7 +24,7 @@ export const SectionTitle = ({
         ? children
         : description && (
             <p
-              className={`text-base text-zinc-500 max-w-lg mt-2 ${leftAlign ? "text-center md:text-left" : "text-center"}`}
+              className={`text-base text-zinc-500 max-w-lg mt-2 ${leftAlign ? "text-center lg:text-left" : "text-center"}`}
             >
               {description}
             </p>

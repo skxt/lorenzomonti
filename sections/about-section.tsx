@@ -6,14 +6,14 @@ export const AboutSection = () => {
   return (
     <Section id="about">
       <main className="flex justify-between">
-        <div className="flex flex-col md:flex-row gap-10 justify-between items-center w-full">
-          <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col lg:flex-row gap-10 justify-between items-center w-full">
+          <div className="flex flex-col items-center lg:items-start">
             <SectionContainer>
-              <h1 className="text-center md:text-left text-3xl md:text-5xl leading-[38px] md:leading-[56px] font-light max-w-xl text-slate-900">
+              <h1 className="text-center lg:text-left text-3xl lg:text-5xl leading-[38px] lg:leading-[56px] font-light max-w-xl text-slate-900">
                 Chirurgo Ortopedico
                 <br />e Traumatologo
               </h1>
-              <div className="text-base md:text-lg tracking-wide font-light text-zinc-500 max-w-lg mt-10 md:text-left text-center">
+              <div className="text-base lg:text-lg tracking-wide font-light text-zinc-500 max-w-lg mt-10 lg:text-left text-center">
                 <p>
                   Il Dott. Lorenzo Monti è medico specialista in Ortopedia e
                   Traumatologia, con particolare competenza nella{" "}

@@ -21,7 +21,7 @@ export const CardGlowing = () => {
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
-        className="relative w-full max-w-[360px] h-[440px] md:w-90 md:h-110 p-px bg-slate-100 backdrop-blur-md text-gray-800 overflow-hidden"
+        className="relative w-full max-w-[360px] h-[440px] lg:w-90 lg:h-110 p-px bg-slate-100 backdrop-blur-md text-gray-800 overflow-hidden"
       >
         <div
           className={`pointer-events-none blur-3xl bg-linear-to-r from-primary via-primary/50 to-primary/10 size-60 absolute z-0 transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0"}`}

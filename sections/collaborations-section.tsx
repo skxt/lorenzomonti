@@ -13,8 +13,8 @@ export const CollaborationsSection = () => {
   ];
   return (
     <div className="bg-white flex justify-center w-full">
-      <div className="flex items-center md:px-20 bg-white w-full max-w-full md:max-w-[80%] px-4 md:px-0">
-        <p className="text-nowrap text-gray-400 max-md:hidden me-5">
+      <div className="flex items-center lg:px-20 bg-white w-full max-w-full lg:max-w-[80%] px-4 lg:px-0">
+        <p className="text-nowrap text-gray-400 max-lg:hidden me-5">
           Collabora con:
         </p>
         <Marquee
