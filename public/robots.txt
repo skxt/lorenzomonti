@@ -1,0 +1,21 @@
+# Robots.txt for Dott. Lorenzo Monti
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Allow search engines to crawl images
+User-agent: Googlebot-Image
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://lorenzomontiortopedico.it/sitemap.xml

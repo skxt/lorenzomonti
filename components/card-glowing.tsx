@@ -33,7 +33,7 @@ export const CardGlowing = () => {
             width={200}
             height={200}
             src="/avatar.webp"
-            alt="Profile Avatar"
+            alt="Dott. Lorenzo Monti - Chirurgo Ortopedico Specialista in Protesi Mininvasiva"
             className="w-36 h-36 rounded-full shadow-md my-4 object-cover"
           />
           <h2 className="text-2xl font-base text-slate-600 mb-1">

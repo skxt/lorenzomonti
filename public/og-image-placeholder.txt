@@ -1,0 +1,12 @@
+<!-- Placeholder per og-image.jpg -->
+Per il testing rapido, crea un file og-image.jpg (1200x630px) con:
+- Logo/nome "Dott. Lorenzo Monti"
+- Tagline "Chirurgo Ortopedico e Traumatologo"
+- Colori: Blu (#4473bc) e bianco
+
+Strumenti free per creare l'immagine:
+- Canva (https://www.canva.com)
+- Design.ly
+- Figma (gratis)
+
+Oppure chiedi a un designer per un'immagine professionale.
