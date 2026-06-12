@@ -59,7 +59,7 @@ export const ServiceSection = () => {
               <div
                 className={`md:hidden overflow-hidden transition-all duration-300 ${
                   activeMobileIndex === index
-                    ? "max-h-48 opacity-100 py-6 px-6 bg-primary/5 border-t border-blue-100/50"
+                    ? "md:max-h-48 opacity-100 py-6 px-6 bg-primary/5 border-t border-blue-100/50"
                     : "max-h-0 opacity-0"
                 }`}
               >
