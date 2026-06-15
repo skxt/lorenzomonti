@@ -3,15 +3,15 @@ import { Logo } from "@/components/logo";
 export const Footer = () => {
   return (
     <>
-      <footer className="px-6 md:px-16 lg:px-24 xl:px-32 text-gray-500">
-        <div className="border-x p-8 md:p-14 border-blue-100 grid gap-12 md:grid-cols-2 bg-white">
+      <footer className="px-4 lg:px-16 xl:px-24 2xl:px-32 text-gray-500">
+        <div className="border-x p-8 lg:p-14 border-blue-100 grid gap-12 lg:grid-cols-2 bg-white">
           <div>
             <Logo themeColor="light" />
             <p className="mt-6 text-sm/7 max-w-sm">
               Ordine dei medici n. 03322, Monza e Brianza.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <h4 className="font-sans text-lg/8 font-semibold">Contatti</h4>
               <ul className="mt-3">

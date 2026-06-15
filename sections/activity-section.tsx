@@ -11,14 +11,19 @@ const PAGE_SIZE = 3;
 const ExperienceCard = ({ item }: { item: IActivity }) => {
   return (
     <div className="border-b border-blue-100 last:border-b-0 px-4 py-5 flex flex-col gap-1.5">
-      <span className="font-light text-xl">{item.title}</span>
+      <span className="font-light text-[16px] lg:text-xl mb-6 lg:mb-0">
+        {item.title}
+      </span>
       <div className="flex flex-wrap items-center gap-x-2 font-medium text-sm text-slate-500">
         {item.company && <span>{item.company}</span>}
       </div>
       {item.description && item.description.length > 0 && (
         <div className="mt-1 space-y-1">
           {item.description.map((line, i) => (
-            <p key={i} className="text-base text-gray-500 leading-relaxed">
+            <p
+              key={i}
+              className="text-sm lg:text-base text-gray-500 leading-relaxed"
+            >
               {line}
             </p>
           ))}

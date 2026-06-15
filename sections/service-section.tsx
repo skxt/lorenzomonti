@@ -8,6 +8,9 @@ import { useState } from "react";
 
 export const ServiceSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [activeMobileIndex, setActiveMobileIndex] = useState<number | null>(
+    null,
+  );
   const service = hoveredIndex !== null ? services[hoveredIndex] : null;
 
   return (
@@ -19,24 +22,56 @@ export const ServiceSection = () => {
         ></SectionTitle>
       </SectionContainer>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 border-t divide-x divide-blue-100 border-blue-100">
+      <div className="grid grid-cols-1 lg:grid-cols-2 border-t divide-y lg:divide-y-0 lg:divide-x divide-blue-100 border-blue-100">
         <div>
           {services.map((item, index) => (
             <div
               key={item.id}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              className={`cursor-pointer flex items-center justify-between py-8 px-12 border-b border-blue-100 last:border-b-0 transition-colors duration-200 ${
-                index === hoveredIndex ? "bg-primary/10" : "hover:bg-primary/10"
-              }`}
+              className="border-b border-blue-100 last:border-b-0"
             >
-              <p className="text-xl font-bold">{item.title}</p>
-              <ArrowDownLeft height={24} width={24} />
+              <div
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                onClick={() =>
+                  setActiveMobileIndex(
+                    activeMobileIndex === index ? null : index,
+                  )
+                }
+                className={`cursor-pointer flex items-center justify-between py-8 px-6 lg:px-12 transition-colors duration-200 ${
+                  index === hoveredIndex
+                    ? "bg-primary/10"
+                    : "hover:bg-primary/5"
+                } ${index === activeMobileIndex ? "bg-primary/5" : ""}`}
+              >
+                <p className="text-xl font-bold max-w-[150px] lg:max-w-[300px]">
+                  {item.title}
+                </p>
+                <ArrowDownLeft
+                  height={24}
+                  width={24}
+                  className={`transition-transform duration-300 ${
+                    activeMobileIndex === index
+                      ? "-rotate-90 text-primary"
+                      : "text-slate-600"
+                  }`}
+                />
+              </div>
+              <div
+                className={`lg:hidden overflow-hidden transition-all duration-300 ${
+                  activeMobileIndex === index
+                    ? "lg:max-h-48 opacity-100 py-6 px-6 bg-primary/5 border-t border-blue-100/50"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <p className="text-base text-gray-500 font-light leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="p-6 md:px-15 md:py-15 max-md:border-t border-blue-100 flex flex-col items-start">
+        <div className="hidden lg:flex p-6 lg:px-15 lg:py-15 border-blue-100 flex-col items-start">
           <p
             className="text-xl text-gray-500 max-w-3xl my-auto font-light leading-7 transition-opacity duration-300"
             style={{ opacity: service ? 1 : 0 }}
