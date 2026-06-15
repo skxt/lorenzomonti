@@ -24,7 +24,9 @@ export const WhereSection = () => {
             <SectionTitle title="Dove opero" />
             <AnimatedContent className="w-full">
               <a
-                href="#"
+                href="https://wa.me/393381572134"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1"
               >
                 Contattami su WhatsApp
@@ -78,7 +80,9 @@ export const WhereSection = () => {
             <SectionTitle title="Dove visito" />
             <AnimatedContent className="w-full">
               <a
-                href="#"
+                href="https://wa.me/393381572134"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-transparent border border-slate-700 w-max hover:bg-gray-100 px-5 py-2 rounded-full mt-6 flex items-center gap-1"
               >
                 Contattami su WhatsApp
