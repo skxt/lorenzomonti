@@ -1,27 +1,27 @@
-# 🚀 Guida Deploy - Dott. Lorenzo Monti
+# 🚀 Deployment Guide - Dr. Lorenzo Monti
 
-## Prima del Deploy - Checklist Veloce
+## Before Deploying - Quick Checklist
 
-### 1. Configurazione SEO
+### 1. SEO Configuration
 
 ```bash
-# Copia .env.example a .env.local e aggiungi il dominio vero
+# Copy .env.example to .env.local and add the actual domain
 cp .env.example .env.local
 ```
 
-Edita `.env.local`:
+Edit `.env.local`:
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://tuodominio.it
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
 ```
 
-### 2. Immagini Necessarie (Metti in `/public`)
+### 2. Required Images (Place in `/public`)
 
-- `og-image.jpg` (1200x630px) - Per social media preview
-- `favicon.ico` - Icona del sito
-- `apple-touch-icon.png` (180x180px) - Per iPhone home screen
+- `og-image.jpg` (1200x630px) - For social media preview
+- `favicon.ico` - Website favicon
+- `apple-touch-icon.png` (180x180px) - For iPhone home screen
 
-Usa Canva gratis per creare og-image.jpg se non hai un designer.
+Use Canva for free to create og-image.jpg if you don't have a designer.
 
 ### 3. Build Test
 
@@ -29,121 +29,121 @@ Usa Canva gratis per creare og-image.jpg se non hai un designer.
 npm run build
 ```
 
-Assicurati che il build termini senza errori.
+Ensure the build completes without errors.
 
-### 4. Preview Locale
+### 4. Local Preview
 
 ```bash
 npm run build
 npm run start
 ```
 
-Controlla http://localhost:3000
+Check http://localhost:3000
 
 ---
 
-## Opzioni di Hosting
+## Hosting Options
 
-### Vercel (Consigliato - Gratuito/A pagamento)
+### Vercel (Recommended - Free/Paid)
 
 ```bash
 npm i -g vercel
 vercel
 ```
 
-- Connetti il repo GitHub
-- Vercel gestisce automaticamente deploy
-- URL di preview su ogni commit
-- Https automatico
-- CDN veloce
+- Connect your GitHub repo
+- Vercel automatically handles deployments
+- Preview URL on every commit
+- Automatic HTTPS
+- Fast CDN
 
-**Vantaggi**: Zero config, ottimizzazione Next.js nativa
+**Benefits**: Zero config, native Next.js optimization
 
-### Netlify (Gratuito/A pagamento)
+### Netlify (Free/Paid)
 
-1. Connetti repo a netlify.com
+1. Connect your repo to netlify.com
 2. Build command: `npm run build`
 3. Publish directory: `.next`
 
-⚠️ Nota: Netlify non supporta bene export statico. Usa Vercel.
+⚠️ Note: Netlify does not support static export well. Use Vercel.
 
-### Self-Hosted (VPS/Hosting Classico)
+### Self-Hosted (VPS/Classic Hosting)
 
 ```bash
-# Build statico
+# Static build
 npm run build
-# Copia dist (no, è export statico, copia output)
-# In next.config.ts c'è output: "export"
+# Copy dist (no, it is a static export, copy the output)
+# next.config.ts has output: "export"
 ```
 
-Copia contenuto di `out/` sul server web (Nginx/Apache).
+Copy the contents of `out/` to the web server (Nginx/Apache).
 
 ---
 
-## Post-Deploy - Registrazioni Motori Ricerca
+## Post-Deployment - Search Engine Registration
 
-### Google Search Console (ESSENZIALE)
+### Google Search Console (ESSENTIAL)
 
-1. Vai a https://search.google.com/search-console/
-2. Aggiungi property: `https://tuodominio.it`
-3. Verifica dominio (HTML file o DNS)
-4. Invia sitemap: `/sitemap.xml`
-5. Attendi indexazione (24-48 ore)
+1. Go to https://search.google.com/search-console/
+2. Add property: `https://yourdomain.com`
+3. Verify domain (HTML file or DNS)
+4. Submit sitemap: `/sitemap.xml`
+5. Wait for indexing (24-48 hours)
 
-### Bing Webmaster Tools (Importante)
+### Bing Webmaster Tools (Important)
 
-1. Vai a https://www.bing.com/webmaster/
-2. Aggiungi sito
-3. Invia sitemap
+1. Go to https://www.bing.com/webmaster/
+2. Add site
+3. Submit sitemap
 
-### Google Analytics 4 (Opzionale ma Consigliato)
+### Google Analytics 4 (Optional but Recommended)
 
-1. Crea account GA4
-2. Aggiungi tag nel layout.tsx o con Google Tag Manager
+1. Create a GA4 account
+2. Add the tag in layout.tsx or via Google Tag Manager
 
 ---
 
-## Testing Post-Deploy
+## Post-Deployment Testing
 
-### 1. Test SEO
+### 1. SEO Test
 
 ```bash
-# Test mobile-friendly
-https://search.google.com/test/mobile-friendly?url=https://tuodominio.it
+# Mobile-friendly test
+https://search.google.com/test/mobile-friendly?url=https://yourdomain.com
 
-# Test Page Speed
-https://pagespeed.web.dev/?url=https://tuodominio.it
+# Page Speed test
+https://pagespeed.web.dev/?url=https://yourdomain.com
 
-# Test Schema Markup
+# Schema Markup test
 https://validator.schema.org/
 ```
 
-### 2. Verifica Indexazione
+### 2. Indexing Verification
 
 ```
-site:tuodominio.it
+site:yourdomain.com
 ```
 
-Su Google Search
+On Google Search
 
-### 3. Controlla Sitemaps
+### 3. Check Sitemaps
 
-- https://tuodominio.it/sitemap.xml ✓
-- https://tuodominio.it/robots.txt ✓
+- https://yourdomain.com/sitemap.xml ✓
+- https://yourdomain.com/robots.txt ✓
 
 ---
 
-## Comandi Utili
+## Useful Commands
 
 ```bash
-# Pulire cache Next.js
+# Clean Next.js cache
 rm -rf .next
 
 # Full rebuild
 npm run clean
 npm run build
 
-# Dev mode con live reload
+# Dev mode with live reload
 npm run dev
 
 # Type check
@@ -155,63 +155,63 @@ npm run lint
 
 ---
 
-## Configurazione DNS (Se Necessario)
+## DNS Configuration (If Necessary)
 
-Se cambiate provider hosting, aggiornate i DNS:
+If you change hosting providers, update the DNS:
 
 ```
-A Record: tuodominio.it → IP del server
-CNAME: www → tuodominio.it
+A Record: yourdomain.com → Server IP
+CNAME: www → yourdomain.com
 ```
 
-A Vercel si fa automatico.
+With Vercel, this is done automatically.
 
 ---
 
-## Monitoraggio Post-Deploy
+## Post-Deployment Monitoring
 
-Settimana 1:
+Week 1:
 
-- [ ] Verifica indexazione Google Search Console
-- [ ] Controlla errori 404
-- [ ] Analizza Google Lighthouse score
-- [ ] Testa mobile su vari dispositivi
+- [ ] Verify indexing in Google Search Console
+- [ ] Check for 404 errors
+- [ ] Analyze Google Lighthouse score
+- [ ] Test mobile responsiveness on various devices
 
-Settimana 2-4:
+Weeks 2-4:
 
-- [ ] Monitora posizioni keyword
-- [ ] Analizza traffico analytics
-- [ ] Correggi eventuali errori trovati
+- [ ] Monitor keyword rankings
+- [ ] Analyze traffic analytics
+- [ ] Fix any issues found
 
 ---
 
 ## Troubleshooting
 
-### Sitemap non trovato
+### Sitemap not found
 
-- Controlla che `/app/sitemap.ts` esiste
-- Build a local: `npm run build`
-- Sitemap generato in `/out/sitemap.xml`
+- Check that `/app/sitemap.ts` exists
+- Build locally: `npm run build`
+- Sitemap is generated in `/out/sitemap.xml`
 
-### Robots.txt non funziona
+### Robots.txt not working
 
-- Verifica `/app/robots.ts`
-- Fallback su `/public/robots.txt`
+- Verify `/app/robots.ts`
+- Fallback to `/public/robots.txt`
 
-### Immagini non caricate
+### Images not loading
 
-- Controlla `/public` folder
-- Verifica path relativi nei componenti
+- Check `/public` folder
+- Verify relative paths in components
 
-### SEO non migliorato
+### SEO not improving
 
-- Attendi 30 giorni (primo indexing)
-- Controlla Google Search Console per errori
-- Aggiungi contenuti freschi (blog se possibile)
+- Wait 30 days (first indexing)
+- Check Google Search Console for errors
+- Add fresh content (blog if possible)
 
 ---
 
-## Link Rapidi
+## Quick Links
 
 - [Vercel Docs](https://vercel.com/docs)
 - [Next.js Docs](https://nextjs.org/docs)
@@ -221,4 +221,4 @@ Settimana 2-4:
 
 ---
 
-**Fatto! Sito pronto per il deploy 🎉**
+**Done! Site ready for deployment 🎉**
