@@ -3,7 +3,7 @@ import { Host_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import LenisScroll from "@/components/lenis";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 
 const hostGrotesk = Host_Grotesk({
   variable: "--font-host-grotesk",
@@ -69,11 +69,12 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
