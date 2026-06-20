@@ -2,6 +2,7 @@ import "./globals.css";
 import { Host_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { CookieBanner } from "@/components/cookie-banner";
 import LenisScroll from "@/components/lenis";
 import { Metadata, Viewport } from "next";
 
@@ -125,6 +126,7 @@ export default function RootLayout({
         <LenisScroll />
         {children}
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );
