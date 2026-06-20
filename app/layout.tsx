@@ -2,6 +2,7 @@ import "./globals.css";
 import { Host_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { CookieBanner } from "@/components/cookie-banner";
 import LenisScroll from "@/components/lenis";
 import { Metadata, Viewport } from "next";
 
@@ -90,7 +91,7 @@ export default function RootLayout({
     description: "Chirurgo specialista in ortopedia e traumatologia",
     url: process.env.NEXT_PUBLIC_SITE_URL,
     telephone: "+39 039 231396",
-    email: "info@lorenzomontiortopedico.it",
+    email: "lorenzomonti@hotmail.it",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Via San Gerardo 10",
@@ -125,6 +126,7 @@ export default function RootLayout({
         <LenisScroll />
         {children}
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

@@ -86,7 +86,7 @@ Create a `.env.local` file (do not commit) with:
 NEXT_PUBLIC_SITE_URL=https://lorenzomontiortopedico.it
 NEXT_PUBLIC_BUSINESS_NAME=Dott. Lorenzo Monti
 NEXT_PUBLIC_BUSINESS_PHONE=+39 039 231396
-NEXT_PUBLIC_BUSINESS_EMAIL=info@lorenzomontiortopedico.it
+NEXT_PUBLIC_BUSINESS_EMAIL=lorenzomonti@hotmail.it
 NEXT_PUBLIC_BUSINESS_ADDRESS=Via San Gerardo 10, 20900 Monza, MB, Italy
 ```
 

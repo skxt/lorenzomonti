@@ -1,4 +1,5 @@
 import { Logo } from "@/components/logo";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -22,7 +23,7 @@ export const Footer = () => {
                 </li>
                 <li className="text-base font-light mb-4">
                   <a href="#" className="hover:underline">
-                    info@lorenzomontiortopedico.it
+                    lorenzomonti@hotmail.it
                   </a>
                 </li>
                 <li className="text-base font-light mb-4">
@@ -41,14 +42,14 @@ export const Footer = () => {
               <h4 className="font-sans text-lg/8 font-semibold">Links</h4>
               <ul className="mt-3">
                 <li className="text-base font-light mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="/cookie-policy" className="hover:underline">
                     Cookie Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className="text-base font-light mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="/privacy-policy" className="hover:underline">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className="text-base font-light mb-4">
                   <a href="#" className="hover:underline">
