@@ -60,7 +60,7 @@ export const CardGlowing = () => {
               <PhoneIcon className="size-5" />
             </a>
             <a
-              href="mailto:info@lorenzomonti.it"
+              href="mailto:lorenzomonti@hotmail.it"
               className="hover:text-primary transition-colors"
               aria-label="Email"
             >

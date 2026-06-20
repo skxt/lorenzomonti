@@ -23,7 +23,7 @@ export const Footer = () => {
                 </li>
                 <li className="text-base font-light mb-4">
                   <a href="#" className="hover:underline">
-                    info@lorenzomontiortopedico.it
+                    lorenzomonti@hotmail.it
                   </a>
                 </li>
                 <li className="text-base font-light mb-4">

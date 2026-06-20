@@ -243,10 +243,10 @@ export default function CookiePolicyPage() {
               su questo sito, l&apos;utente può rivolgersi al Titolare del
               Trattamento all&apos;indirizzo email:{" "}
               <a
-                href="mailto:info@lorenzomontiortopedico.it"
+                href="mailto:lorenzomonti@hotmail.it"
                 className="text-[#4473bc] hover:underline font-medium"
               >
-                info@lorenzomontiortopedico.it
+                lorenzomonti@hotmail.it
               </a>
               .
             </p>

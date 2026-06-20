@@ -91,7 +91,7 @@ export default function RootLayout({
     description: "Chirurgo specialista in ortopedia e traumatologia",
     url: process.env.NEXT_PUBLIC_SITE_URL,
     telephone: "+39 039 231396",
-    email: "info@lorenzomontiortopedico.it",
+    email: "lorenzomonti@hotmail.it",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Via San Gerardo 10",
