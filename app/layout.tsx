@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { CookieBanner } from "@/components/cookie-banner";
 import LenisScroll from "@/components/lenis";
 import { Metadata, Viewport } from "next";
+import { faqs } from "@/data/faqs";
 
 const hostGrotesk = Host_Grotesk({
   variable: "--font-host-grotesk",
@@ -13,14 +14,15 @@ const hostGrotesk = Host_Grotesk({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://lorenzomontiortopedico.it";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.montiortopedico.it";
 
 export const metadata: Metadata = {
-  title: "Dott. Lorenzo Monti | Chirurgo Ortopedico e Traumatologo",
+  metadataBase: new URL(siteUrl),
+  title: "Lorenzo Monti Ortopedico a Monza | Chirurgo Protesi Anca e Ginocchio",
   description:
-    "Chirurgo specialista in protesi mininvasiva e robotica di anca e ginocchio. Consulenza online e visite in studio a Monza.",
+    "Dott. Lorenzo Monti, ortopedico e traumatologo a Monza e Milano. Specialista in protesi mininvasiva e robotica di anca e ginocchio. Prenota una visita.",
   keywords:
-    "Lorenzo Monti, ortopedico, traumatologo, chirurgia protesica, protesi anca, protesi ginocchio, Monza",
+    "Lorenzo Monti ortopedico, Lorenzo Monti ortopedico Monza, ortopedico, traumatologo, chirurgia protesica, protesi anca, protesi ginocchio, Monza",
   authors: [{ name: "Lorenzo Monti" }],
   creator: "Lorenzo Monti",
   publisher: "Lorenzo Monti",
@@ -34,7 +36,7 @@ export const metadata: Metadata = {
     locale: "it_IT",
     url: siteUrl,
     siteName: "Dott. Lorenzo Monti - Chirurgo Ortopedico",
-    title: "Dott. Lorenzo Monti | Chirurgo Ortopedico e Traumatologo",
+    title: "Lorenzo Monti Ortopedico a Monza | Chirurgo Protesi Anca e Ginocchio",
     description:
       "Specialista in protesi mininvasiva e robotica di anca e ginocchio",
     images: [
@@ -85,11 +87,13 @@ export default function RootLayout({
 }>) {
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "@id": process.env.NEXT_PUBLIC_SITE_URL,
+    "@type": ["Physician", "MedicalBusiness"],
+    "@id": `${siteUrl}/#physician`,
     name: "Dott. Lorenzo Monti",
     description: "Chirurgo specialista in ortopedia e traumatologia",
-    url: process.env.NEXT_PUBLIC_SITE_URL,
+    url: siteUrl,
+    image: `${siteUrl}/og-image.jpg`,
+    areaServed: ["Monza", "Milano", "Monza e Brianza", "Como"],
     telephone: "+39 039 231396",
     email: "lorenzomonti@hotmail.it",
     address: {
@@ -100,13 +104,23 @@ export default function RootLayout({
       postalCode: "20900",
       addressCountry: "IT",
     },
-    medicalSpecialty: "Orthopedic Surgery, Traumatology",
+    medicalSpecialty: ["Orthopedic", "Surgical"],
     knowsAbout: [
       "Hip Arthroplasty",
       "Knee Arthroplasty",
       "Minimally Invasive Surgery",
       "Robotic Surgery",
     ],
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
   };
 
   return (
@@ -117,6 +131,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schemaMarkup),
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
       <body

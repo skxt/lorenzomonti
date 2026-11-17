@@ -83,7 +83,7 @@
 Create a `.env.local` file (do not commit) with:
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://lorenzomontiortopedico.it
+NEXT_PUBLIC_SITE_URL=https://www.montiortopedico.it
 NEXT_PUBLIC_BUSINESS_NAME=Dott. Lorenzo Monti
 NEXT_PUBLIC_BUSINESS_PHONE=+39 039 231396
 NEXT_PUBLIC_BUSINESS_EMAIL=lorenzomonti@hotmail.it
@@ -125,3 +125,11 @@ Create these images and place them in `/public`:
 - Update `lastmod` in sitemap periodically
 - Images use Next.js Image component (optimized)
 - Mobile-responsive up to 1024px (lg breakpoint)
+
+## Manual actions (off-code)
+
+- [ ] Cloudflare: make sure Googlebot is not blocked (Bot Fight Mode / WAF); curl returned 403
+- [ ] Search Console: verify property, submit sitemap, URL Inspection
+- [ ] Google Business Profile for the Monza practice
+- [ ] Listings on medical directories (Doctolib, MioDottore, Paginemediche) with backlinks
+- [ ] Set NEXT_PUBLIC_SITE_URL in the build environment

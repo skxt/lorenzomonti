@@ -10,8 +10,8 @@ export const AboutSection = () => {
           <div className="flex flex-col items-center lg:items-start">
             <SectionContainer>
               <h1 className="text-center lg:text-left text-3xl lg:text-5xl leading-[38px] lg:leading-[56px] font-light max-w-xl text-slate-900">
-                Chirurgo Ortopedico
-                <br />e Traumatologo
+                Lorenzo Monti, Ortopedico
+                <br />a Monza e Milano
               </h1>
               <div className="text-base lg:text-lg tracking-wide font-light text-zinc-500 max-w-lg mt-10 lg:text-left text-center">
                 <p>

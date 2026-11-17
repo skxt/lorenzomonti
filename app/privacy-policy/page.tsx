@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
               del Regolamento (UE) 2016/679 (GDPR) relativo alla protezione
               delle persone fisiche con riguardo al trattamento dei dati
               personali. L&apos;informativa è valida esclusivamente per il sito{" "}
-              <strong>lorenzomontiortopedico.it</strong> e non per altri siti
+              <strong>www.montiortopedico.it</strong> e non per altri siti
               web eventualmente consultati dall&apos;utente tramite link
               esterni.
             </p>
