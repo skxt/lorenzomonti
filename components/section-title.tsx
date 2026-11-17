@@ -15,11 +15,11 @@ export const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <div className={className}>
-      <h1
+      <h2
         className={`font-sans text-3xl lg:text-4xl/12 font-bold max-w-2xl bg-linear-to-r from-white to-white/50 bg-clip-text ${leftAlign ? "lg:text-left text-center" : "text-center"}`}
       >
         {title}
-      </h1>
+      </h2>
       {children
         ? children
         : description && (
